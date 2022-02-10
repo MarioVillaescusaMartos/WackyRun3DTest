@@ -60,18 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\BOXOPHOBIC\Utils\Scripts\StyledMono\StyledScriptableObject.cs" />
-    <Compile Include="Assets\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledRangeOptions.cs" />
-    <Compile Include="Assets\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledSpace.cs" />
-    <Compile Include="Assets\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledTexturePreview.cs" />
-    <Compile Include="Assets\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledMessage.cs" />
-    <Compile Include="Assets\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledEnum.cs" />
-    <Compile Include="Assets\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledCategory.cs" />
-    <Compile Include="Assets\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledInteractive.cs" />
-    <Compile Include="Assets\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledMask.cs" />
-    <Compile Include="Assets\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledIndent.cs" />
-    <Compile Include="Assets\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledButton.cs" />
-    <Compile Include="Assets\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledText.cs" />
-    <Compile Include="Assets\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledBanner.cs" />
     <Compile Include="Assets\BOXOPHOBIC\Utils\Scripts\StyledMono\StyledMonoBehaviour.cs" />
     <Compile Include="Assets\BOXOPHOBIC\Utils\Scripts\StyledInspector\StyledLayers.cs" />
     <Compile Include="Assets\BOXOPHOBIC\Utils\Scripts\StyledGizmos\StyledLabelGizmo.cs" />
@@ -314,9 +302,6 @@
     </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:\Program Files\Unity 2021.1.12f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Android.Extensions">
-      <HintPath>C:\Program Files\Unity 2021.1.12f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:\Program Files\Unity 2021.1.12f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
