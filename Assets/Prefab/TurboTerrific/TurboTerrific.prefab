@@ -670,6 +670,8 @@ GameObject:
   - component: {fileID: 7088901154170551079}
   - component: {fileID: 6023753522565730221}
   - component: {fileID: 5802346714527610405}
+  - component: {fileID: 7007396318490173803}
+  - component: {fileID: 7766468996465467210}
   m_Layer: 6
   m_Name: TurboTerrific
   m_TagString: Untagged
@@ -786,7 +788,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2167583637322321222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935ef2137e0d3e044bba31c95428d89f, type: 3}
+  m_Script: {fileID: 11500000, guid: 49de5425284974749ad45ae55e945fee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &5802346714527610405
@@ -798,10 +800,48 @@ MonoBehaviour:
   m_GameObject: {fileID: 2167583637322321222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4fb62b6cebb8f7499e4e1d122a76c51, type: 3}
+  m_Script: {fileID: 11500000, guid: a84562ecca5e9e146a31581ee632a4e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  jumpSpeed: 0
+  sizeX: 0
+  sizeY: 0
+  sizeZ: 0
+--- !u!114 &7007396318490173803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167583637322321222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05099f71da67c584ebbc60d0df32f6a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  maxHealth: 1
+  INVENCIBLE: 1
+--- !u!95 &7766468996465467210
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167583637322321222}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e5cf93c9aefb0ce478df6dabec20fc90, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2579668580608619465
 GameObject:
   m_ObjectHideFlags: 0
