@@ -22,7 +22,7 @@ public class FollowerMovement : MonoBehaviour
     {
         if (startMove)
         {
-            Destroy(gameObject.GetComponent<Roadside>());
+            //Destroy(gameObject.GetComponent<Roadside>());
             transform.SetParent(null);
             Vector3 pos = Vector3.MoveTowards(transform.position, target.position - new Vector3(0, 0, 5), speed * Time.fixedDeltaTime);
             _rb.MovePosition(pos);
