@@ -258,7 +258,8 @@ GameObject:
   - component: {fileID: 3404439739692814526}
   - component: {fileID: 5583072060305423595}
   - component: {fileID: 3809359488149670236}
-  - component: {fileID: -3617452509958119766}
+  - component: {fileID: 4381220253155353209}
+  - component: {fileID: -8563415797401012499}
   - component: {fileID: 2434053975107098974}
   m_Layer: 7
   m_Name: TheArmySurplus
@@ -332,7 +333,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.03615509, y: 0.060526937, z: 0.0933262}
   m_Center: {x: -0.00010869026, y: 0.03990529, z: 0.011891003}
---- !u!114 &-3617452509958119766
+--- !u!114 &4381220253155353209
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -346,6 +347,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   segmentLength: 1000
+--- !u!114 &-8563415797401012499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3580740554380578167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0ed0f2a8b181a4fa2dfe11d6685288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  speed: 5
+  startMove: 0
 --- !u!114 &2434053975107098974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,9 +374,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e3cdfa5b5db00642b5d45881e46e3d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalRotation: 1
   startRotation: 0
-  objectiveRotation: {fileID: 0}
+  target: {fileID: 0}
 --- !u!1 &3762664557217360512
 GameObject:
   m_ObjectHideFlags: 0

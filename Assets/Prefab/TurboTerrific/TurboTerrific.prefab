@@ -668,10 +668,10 @@ GameObject:
   - component: {fileID: -2488397274763362687}
   - component: {fileID: 2826980253588667403}
   - component: {fileID: 7088901154170551079}
+  - component: {fileID: 7766468996465467210}
   - component: {fileID: 6023753522565730221}
   - component: {fileID: 5802346714527610405}
   - component: {fileID: 7007396318490173803}
-  - component: {fileID: 7766468996465467210}
   m_Layer: 6
   m_Name: TurboTerrific
   m_TagString: Untagged
@@ -734,6 +734,7 @@ Transform:
   - {fileID: 7481660848067810202}
   - {fileID: 5785179172247326521}
   - {fileID: 3243674379860413770}
+  - {fileID: 7848621051813091444}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -779,6 +780,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.068687, y: 0.03338314, z: 0.13111831}
   m_Center: {x: -0.00007236187, y: 0.025760546, z: -0.0003210728}
+--- !u!95 &7766468996465467210
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2167583637322321222}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0ce5f6c69b8a8a4408ae9bc5857cf0c5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &6023753522565730221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -805,9 +825,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpSpeed: 0
-  sizeX: 0
-  sizeY: 0
-  sizeZ: 0
+  sizeX: 90
+  sizeY: 90
+  sizeZ: 90
 --- !u!114 &7007396318490173803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -823,25 +843,6 @@ MonoBehaviour:
   health: 1
   maxHealth: 1
   INVENCIBLE: 1
---- !u!95 &7766468996465467210
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2167583637322321222}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e5cf93c9aefb0ce478df6dabec20fc90, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2579668580608619465
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,6 +1335,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &3632583102715042962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7848621051813091444}
+  m_Layer: 6
+  m_Name: FollowPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7848621051813091444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3632583102715042962}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.095}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1539982007025244156}
+  m_RootOrder: 44
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4223181976735586414
 GameObject:
   m_ObjectHideFlags: 0

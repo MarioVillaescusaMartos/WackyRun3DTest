@@ -5,13 +5,10 @@ using UnityEngine;
 public class FollowerRotation : MonoBehaviour
 {
     [SerializeField]
-    private float finalRotation;
-
-    [SerializeField]
     private bool startRotation;
 
     [SerializeField]
-    private GameObject objectiveRotation;
+    private Transform target;
 
     // Start is called before the first frame update
     void Start()
@@ -24,13 +21,12 @@ public class FollowerRotation : MonoBehaviour
     {
         if (startRotation)
         {
-            transform.Rotate(0, 5 * finalRotation, 0);
+            transform.LookAt(target);
         }
     }
 
     public void OnTriggerEnter(Collider collision)
     {
         startRotation = true;
-        Debug.Log("Start Rotation");
     }
 }
