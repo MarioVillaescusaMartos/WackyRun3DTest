@@ -11,6 +11,9 @@ public class InputSystemKeyboard : MonoBehaviour
 
     public event Action OnFire1 = delegate { }; //Se crea el evento pulico para que hayan clases que se puedan enterar de el (OnFire puede ser cualquier nombre)(delegate: forma de decir que es un evento)
     public event Action OnJump = delegate { };
+    public event Action OnCreateFollower = delegate { };
+    public event Action OnInvencible = delegate { };
+    public event Action OnDeleteFollower = delegate { };
 
     private bool pause;
     bool keyPressed;
@@ -35,6 +38,27 @@ public class InputSystemKeyboard : MonoBehaviour
             {
                 OnPause(); //Cuando se pulsa la tecla "Esc" el juego se pausa
             }*/
+
+            //Good mode keys
+            //Create Follower
+            if (Input.GetKeyDown(KeyCode.P) && Input.GetKeyDown(KeyCode.RightControl))
+            {
+                OnCreateFollower();
+            }
+
+            //Invencible
+            if (Input.GetKeyDown(KeyCode.I) && Input.GetKeyDown(KeyCode.RightControl))
+            {
+                OnInvencible();
+
+            }
+
+        //Delete followers
+            if (Input.GetKeyDown(KeyCode.O) && Input.GetKeyDown(KeyCode.RightControl))
+            {
+                OnDeleteFollower();
+
+            }
         //}
     }
 

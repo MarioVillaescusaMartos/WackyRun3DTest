@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class FollowerMovement : MonoBehaviour
 {
-    public Transform target;
-    public float speed;
+    [SerializeField]
+    private Transform target;
+    [SerializeField]
+    private float speed;
+
+    private bool startMove;
+
     Rigidbody _rb;
-    public bool startMove;
+    RoadMove _rm;
 
 
     // Start is called before the first frame update
@@ -22,7 +27,7 @@ public class FollowerMovement : MonoBehaviour
     {
         if (startMove)
         {
-            //Destroy(gameObject.GetComponent<Roadside>());
+            Destroy(gameObject.GetComponent<RoadMove>());
             transform.SetParent(null);
             Vector3 pos = Vector3.MoveTowards(transform.position, target.position - new Vector3(0, 0, 5), speed * Time.fixedDeltaTime);
             _rb.MovePosition(pos);
